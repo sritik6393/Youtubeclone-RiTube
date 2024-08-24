@@ -1,0 +1,75 @@
+.Sidebar {
+    color: white;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+    transition: width 0.3s ease; 
+}
+
+.sortcuts-Link i {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.side-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: -17px; 
+    width: 100%; 
+    cursor: pointer;
+    padding: 5px 0;
+    transition: all 0.3s ease; 
+}
+
+.Sidebar hr {
+    border: 0;
+    height: 1px;
+    background: white;
+    width: 85%;
+    margin: 20px 0; 
+}
+
+.subscribed-list h3 {
+    font-size: 13px;
+    margin: 20px 0;
+    color: white;
+}
+
+.subscribed-list img {
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.small-sidebar {
+    width: 5%; 
+}
+
+.small-sidebar .side-link p {
+    display: none;
+}
+.small-sidebar .side-link {
+  
+    align-items: center;
+    margin-bottom:12px; 
+    
+}
+
+.small-sidebar .side-link img {
+    margin-right: 0; 
+}
+
+.small-sidebar .subscribed-list h3 {
+    display: none; 
+}
+ .active i{
+    padding-bottom: 2px;
+    border-bottom: 3px solid rgb(67, 117, 255);
+}
+i:hover{
+   
+    color: cornflowerblue;
+}

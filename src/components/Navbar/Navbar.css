@@ -1,0 +1,126 @@
+/* Base styles for the navigation */
+nav {
+    display: flex;
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px grey;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    width: 100%; /* Ensure nav doesn't exceed the viewport width */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+.flex-div {
+    background-color: rgb(13, 13, 30);
+}
+
+.nav-left .menu-icon {
+    width: 22px;
+    margin-right: 25px;
+}
+
+.nav-left .logo {
+    width: 200px;
+    height: auto;
+    max-width: 100%; /* Ensure logo doesn't exceed its container */
+}
+
+.nav-middle .search-box {
+    border: 1px solid floralwhite;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+.nav-middle .search-box input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: rgb(16, 16, 33);
+    color: white;
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+.nav-right i {
+    margin-right: 25px;
+    width: 25px;
+}
+
+.nav-right .user-icon {
+    border-radius: 50%;
+}
+
+/* Prevent horizontal overflow */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 900px) {
+    .nav-left .menu-icon {
+        display: none;
+    }
+
+    .nav-middle .search-box {
+        width: 100%;
+    }
+
+    .nav-right i {
+        display: none;
+    }
+
+    .nav-right .user-icon {
+        display: block;
+    }
+
+    .nav-left .logo {
+        width: 90px;
+        max-width: 100%; /* Ensure logo fits within the container */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    .nav-left,
+    .nav-middle,
+    .nav-right {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 5px; /* Add some spacing between stacked elements */
+        box-sizing: border-box; /* Include padding in the width */
+    }
+
+    .nav-middle .search-box {
+        margin-right: 0;
+        width: 90%;
+    }
+
+    .nav-right .user-icon {
+        margin-top: 10px;
+        width: 40px; /* Adjust icon size */
+    }
+
+    .nav-left .logo {
+        width: 100px; /* Adjust logo size for better fit */
+    }
+}
+
+/* Responsive styles for very small devices */
+@media (max-width: 400px) {
+    .nav-left .logo {
+        width: 70px;
+    }
+
+    .nav-middle .search-box input {
+        width: 100%;
+    }
+
+    .nav-right .user-icon {
+        width: 30px;
+    }
+}

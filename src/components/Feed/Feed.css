@@ -1,0 +1,37 @@
+.feed{
+    position:relative;
+    left:4.5rem;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-top: 15px;
+    margin-left: 4.8rem;
+    background-color: rgb(15, 15, 30);
+}
+/* .card{
+    width: ;
+} */
+.card {
+    /* text-align: center; */
+    /* height: 100px; */
+    width: 230px;
+    height: 250px !important;
+    /* border: 1px solid white !important; */
+    background: rgb(15, 15, 30) !important;
+    color: white !important;
+    line-height: 2px !important;
+    /* margin-bottom: 6px ; */
+    /* border: 1px solid white; */
+
+}
+.card img{
+    margin-bottom: 2px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.card h5{
+    font-size: 12px;
+}
+
